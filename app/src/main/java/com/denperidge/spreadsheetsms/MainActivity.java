@@ -7,18 +7,14 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
-import okhttp3.OkHttp;
-import okhttp3.OkHttpClient;
+
 
 public class MainActivity extends AppCompatActivity {
-    OkHttpClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        client = new OkHttpClient();
 
         EditText etURL = findViewById(R.id.etURL);
         etURL.addTextChangedListener(new android.text.TextWatcher() {
@@ -32,20 +28,15 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                String csv = downloadGSheetAsCsv(s.toString());
-                loadCsvIntoTable(csv);
+                getDataFromGSheet(s.toString());
             }
         });
     }
 
-    private String downloadGSheetAsCsv(String url) {
-
+    private String getDataFromGSheet(String url) {
+    
 
 
         return url;
-    }
-
-    private void loadCsvIntoTable(String csv) {
-
     }
 }

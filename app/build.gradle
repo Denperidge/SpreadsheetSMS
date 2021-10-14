@@ -6,7 +6,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.denperidge.spreadsheetsms"
+        applicationId "com.denperidge.googlesheetssms"
         minSdk 16
         targetSdk 31
         versionCode 1
@@ -37,4 +37,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation 'com.google.api-client:google-api-client:1.32.1'
+    implementation 'com.google.apis:google-api-services-sheets:v4-rev581-1.25.0'
+
 }

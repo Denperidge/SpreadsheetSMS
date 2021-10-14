@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SpreadsheetSMS</string>
+    <string name="app_name">GoogleSheetsSMS</string>
     <string name="url_hint">https://docs.google.com/spreadsheets/d/...</string>
     <string name="cont">Continue</string>
     <string name="et_url_hint">Enter the URL to the Google Sheet</string>
